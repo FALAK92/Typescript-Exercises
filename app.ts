@@ -1,9 +1,9 @@
-let names :string[] = ["Falak", "Anam", "Sana", "Aisha"];
 
-const message :string = "welcome to governor initiative program: ";
 
-for (let i = 0; i < names.length; i++) {
+let transportation :string[] = ['Motorcycle','Car','Train','Cycle'];
 
-    console.log(message + names[i]);
+for(let i=0; i<transportation.length; i++){
 
+    console.log('I would like to own a ' + transportation[i]);
+    
 }
