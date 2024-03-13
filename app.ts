@@ -1,5 +1,9 @@
-const favourite_Number : number= 7;
+let names: string[] = ["Falak","Anam","Sana","Aisha"];
 
-const message=" My favourite number is " + favourite_Number;
 
-console.log(message);
+
+for(let i=0; i<names.length; i++){
+
+    console.log(names[i]);
+
+}

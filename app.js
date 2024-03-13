@@ -1,4 +1,5 @@
 "use strict";
-const favourite_Number = 7;
-const message = " My favourite number is " + favourite_Number;
-console.log(message);
+let names = ["Falak", "Anam", "Sana", "Aisha"];
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
