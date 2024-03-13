@@ -1,21 +1,38 @@
 "use strict";
-// • Store the locations in a array. Make sure the array is not in alphabetical order.
-let places = ['Eiffel Tower', 'Statue of liberty', 'Taj Mahal', 'Burj Khalifa', 'Great wall of China\n'];
-// • Print your array in its original order.
-console.log('\norignal ' + places);
-// • Print your array in alphabetical order without modifying the actual list.
-console.log('\ncopy ' + [...places].sort());
-// • Show that your array is still in its original order by printing it.
-console.log('\norignal ' + places);
-// • Print your array in reverse alphabetical order without changing the order of the original list.
-console.log('\ncopy ' + [...places].sort().reverse());
-// • Show that your array is still in its original order by printing it again.
-console.log('\norignal ' + places);
-// • Reverse the order of your list. Print the array to show that its order has changed.
-console.log('\norignal ' + places.reverse());
-// • Reverse the order of your list again. Print the list to show it’s back to its original order.
-console.log('\norignal ' + places.reverse());
-// • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
-console.log('\norignal ' + places.sort());
-// • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
-console.log('\norignal ' + places.sort().reverse());
+let Guest_List = ['Zoya', 'Zimal', 'Zubia'];
+// for (let i = 0; i < Guest_List.length; i++) {
+//     console.log('My lovely friend.' + Guest_List[i] + ',\n\n it is my pleasure to invite you in my birthday party.\n\n THANK YOU!\n\n');
+// }
+let absent_Guest = 'Zoya';
+let new_Guest = 'Mishaal';
+Guest_List[0] = new_Guest;
+// for (let i = 0; i < Guest_List.length; i++) {
+//     console.log('My lovely friend.' + Guest_List[i] + ',\n\n it is my pleasure to invite you in my birthday party.\n\n THANK YOU!\n\n');
+// }
+// console.log(`${absent_Guest} is not coming in my birthday party.`);
+// console.log('Good News! I found a big table so i invite 3 more friends.');
+//array mai 3 guest add kie hain
+Guest_List.unshift('Suhaima');
+Guest_List.splice(2, 0, 'Iqra');
+Guest_List.push('Sonya');
+// yahan pr 6 guest ka array print hua hai
+// for (let i = 0; i < Guest_List.length; i++) {
+//     console.log('My lovely friend.' + Guest_List[i] + ',\n\n it is my pleasure to invite you in my birthday party.\n\n THANK YOU!\n\n');
+// }
+//sorry message for not inviting
+// console.log('\nSorry I can not arrange big table, only two people will be invited.');
+//yahan pr guest remove kie hain
+while (Guest_List.length > 2) {
+    let remove_Guest = Guest_List.pop();
+    // console.log(`Sorry ${remove_Guest}, you are not invited for birthday party.`);
+}
+//bache hue 2 invited guest
+// for(let i = 0; i < Guest_List.length; i++) {
+//     console.log('My Dear Friend,' + Guest_List[i] +'\n\n You are still invited.\n\nThank You!\n\n');
+// }
+//sare guest remove krdie
+Guest_List.splice(0, 2);
+console.log(Guest_List);
+//Exercise # 19
+//print a number indicating the number of people you are inviting to birthday party
+console.log(`Total number of guest are: ${Guest_List.length}`);
