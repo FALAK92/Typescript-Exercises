@@ -1,4 +1,7 @@
-const personName: string="   \n\tImran Khan\t\n   ";
-console.log(personName);
-const without_whitespace: string= personName.trim();
-console.log(without_whitespace);
+console.log(5+3);  //Addition
+
+console.log(12-4);  //subtraction
+
+console.log(2*4);  //multiplication
+
+console.log(16/2);  //division
