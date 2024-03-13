@@ -1,7 +1,5 @@
-console.log(5+3);  //Addition
+const favourite_Number : number= 7;
 
-console.log(12-4);  //subtraction
+const message=" My favourite number is " + favourite_Number;
 
-console.log(2*4);  //multiplication
-
-console.log(16/2);  //division
+console.log(message);
