@@ -1,14 +1,16 @@
-// Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message
-//  that reads I love TypeScript. Make a large shirt and a medium shirt with the default message,
-//  and a shirt of any size with a different message.
+// Cities: Write a function called describe_city() that accepts the name of a city and its country.
+//  The function should print a simple sentence, such as Karachi is in Pakistan. 
+//  Give the parameter for the country a default value. Call your function for three different cities,
+//  at least one of which is not in the default country.
 
-function make_shirt(size:string = 'Large', text:string = 'I love Typescript'){
+function describe_city(city:string , country:string = 'default country'){
 
-    console.log(`Creating a ${size} shirt with the message: ${text}`);
+    console.log(`${city} is in ${country}`);
+
 }
 
-make_shirt();
+describe_city('Karachi', 'Pakistan');
 
-make_shirt('Medium');
+describe_city('Jeddah', 'Saudia Arabia');
 
-make_shirt('Small' , 'I love Python');
+describe_city('Tokyo');
