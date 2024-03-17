@@ -1,38 +1,19 @@
+// Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+let alien_color: string= 'green'; 
 
-// Equality and Unequality test 1
-console.log("Equality test with string: " , "Mango" === "Mango");
-// Equality and Unequality test 2
-console.log("Inequality test with string: " , ("Mango" as string) != "Orange");
+// Write an if statement to test whether the alien’s color is green. 
+// If it is, print a message that the player just earned 5 points.
+if(alien_color === 'green'){
+    console.log("Player just earned 5 points! ");
+}
 
-// Test using the lower case function
-console.log("Lower case function test: " , "HELLO".toLowerCase() === "hello");
+// Write one version of this program that passes the if test and another that fails. 
+alien_color = 'Yellow';
 
-// Numerical tests involving equality 
-console.log("Equality test with numbers: " , 29 === 29);
-// Numerical tests involving Inequality
-console.log("Inequality test with numbers: " , (29 as number) != 20);
-
-// Greater than test
-console.log("Greater than test: " , 25 > 18);
-// less than test
-console.log("Less than test: " , 25 < 50);
-
-// Greter than and equal to
-console.log("Greater than and equal to test: " , 25 >= 20);
-// Less than and equal to
-console.log("Less than and equal to test: " , 6 <= 19);
-
-// Tests using "and" operators
-console.log("And operater test: " , 10 === 10 && 45 > 20);
-// Tests using "or" operators
-console.log("OR operater test: " , 10 === 10 || 45 > 20);
-
-//  Test whether an item is in a array
-const languages: string[] = ['HTML', 'CSS' ,'Javascript'];
-console.log('Test "CSS" is in the array:' , languages.includes("CSS"));
-
-// Test whether an item is not in a array
-console.log('Test "Typescript" is not in the array:' , !languages.includes("Typescript"));
+// (The version that fails will have no output.)
+if(alien_color === 'green'){
+    console.log("Player just earned 5 points! ");
+}
 
 
 
