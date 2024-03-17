@@ -1,45 +1,39 @@
-// Write a series of conditional tests. 
-// creating car variable
-let car:string ='subaru';
-// Test no 1
-console.log("Is car == 'subaru'? I predict True.");
-console.log(car =='subaru');
 
-// Test no 2
-console.log("Is car === 'subaru'? I predict True.");
-console.log(car === 'subaru');
+// Equality and Unequality test 1
+console.log("Equality test with string: " , "Mango" === "Mango");
+// Equality and Unequality test 2
+console.log("Inequality test with string: " , ("Mango" as string) != "Orange");
 
-// Test no 3
-console.log("Is car != 'Honda'? I predict True.");
-console.log(car != 'Honda');
+// Test using the lower case function
+console.log("Lower case function test: " , "HELLO".toLowerCase() === "hello");
 
-// Test no 4
-console.log("Is car !== 'Ford'? I predict True.");
-console.log(car !== 'Ford');
+// Numerical tests involving equality 
+console.log("Equality test with numbers: " , 29 === 29);
+// Numerical tests involving Inequality
+console.log("Inequality test with numbers: " , (29 as number) != 20);
 
-// Test no 5
-console.log("Is car.Upper case == 'SUBARU'? I predict True.");
-console.log(car.toUpperCase() == 'SUBARU');
+// Greater than test
+console.log("Greater than test: " , 25 > 18);
+// less than test
+console.log("Less than test: " , 25 < 50);
 
-// Test no 6
-console.log("Is car == 'SUBARU'? I predict false.");
-console.log(car == 'SUBARU');
+// Greter than and equal to
+console.log("Greater than and equal to test: " , 25 >= 20);
+// Less than and equal to
+console.log("Less than and equal to test: " , 6 <= 19);
 
-// Test no 7
-console.log("Is car === 'SUBARU'? I predict false.");
-console.log(car === 'SUBARU');
+// Tests using "and" operators
+console.log("And operater test: " , 10 === 10 && 45 > 20);
+// Tests using "or" operators
+console.log("OR operater test: " , 10 === 10 || 45 > 20);
 
-// Test no 8
-console.log("Is car == 'Train'? I predict false.");
-console.log(car == 'Train');
+//  Test whether an item is in a array
+const languages: string[] = ['HTML', 'CSS' ,'Javascript'];
+console.log('Test "CSS" is in the array:' , languages.includes("CSS"));
 
-// Test no 9
-console.log("Is car == 'Bus'? I predict false.");
-console.log(car == 'Bus');
+// Test whether an item is not in a array
+console.log('Test "Typescript" is not in the array:' , !languages.includes("Typescript"));
 
-// Test no 10
-console.log("Is car == 'cycle'? I predict false.");
-console.log(car == 'cycle');
 
 
 
