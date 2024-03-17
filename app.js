@@ -1,5 +1,3 @@
 "use strict";
-let cities = ['Karachi', 'Islamabad', 'Lahore', 'Multan', 'Quetta', 'Faisalabad'];
-cities.forEach((item) => {
-    console.log(item);
-});
+let stdDetail = { name: "Falak", fathername: "Aslam", age: 27, Rollno: 1234, isPass: true };
+console.log(stdDetail);
