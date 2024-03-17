@@ -1,3 +1,8 @@
 "use strict";
-let stdDetail = { name: "Falak", fathername: "Aslam", age: 27, Rollno: 1234, isPass: true };
-console.log(stdDetail);
+// creating Array
+let newArray = ['HTML', 'CSS', 'Javascript'];
+// Accessing array by index
+console.log(newArray[5]);
+// make sure you correct the error before close the program
+// correct the Array
+console.log(newArray);
