@@ -1,13 +1,12 @@
-// Animals: Think of at least three different animals that have a common characteristic. 
-// Store the names of these animals in a list, and then use a for loop to print out the name of each animal.
-// • Modify your program to print a statement about each animal, such as A dog would make a great pet.
-//  • Add a line at the end of your program stating what these animals have in common.
-//  You could print a sentence such as Any of these animals would make a great pet!
+// T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be
+//  printed on the shirt. The function should print a sentence summarizing the size of the shirt and
+//   the message printed on it.
+//  Call the function.
 
-let animals: string[] = ['Dog','Cat','Rabbit'];
+function make_shirt(size:string, text:string){
 
-for(let animal of animals){
-    console.log(`A ${animal} would make a great pet!`);
+    console.log(`Creating a ${size} shirt with the message: ${text}`);
+
 }
 
-console.log(`Any of these animals would make a great pet!`);
+make_shirt(`large`, `Ramzan Kareem`);
