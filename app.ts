@@ -1,38 +1,17 @@
-// Unchanged Magicians: Start with your work from Exercise 40. 
-// Call the function make_great() with a copy of the array of magicians’ names.
-//  Because the original array will be unchanged, return the new array and store it in a separate array. 
-//  Call show_magicians() with each array to show that you have one array of the original names and one array
-//   with the Great added to each magician’s name.
+// Sandwiches: Write a function that accepts a array of items a person wants on a sandwich.
+//  The function should have one parameter that collects as many items as the function call provides,
+//   and it should print a summary of the sandwich that is being ordered. Call the function three times, 
+//   using a different number of arguments each time.
 
-let magician: string[] = ['Harry potter','Hermione Granger','Ron Weasley','Albus Dumbledore'];
+function makeSandwich (item:string[]){
+    console.log('\nMaking your sandwich with:');
 
-function copyArray(arr:string[]){
-    return[...arr]
+    item.forEach(element => console.log('- ' + element));
 
+    console.log('Enjoy your sandwich!\n');
 }
+ makeSandwich(['Ham', 'Cheese', 'Lettuce']);
 
-function make_great(magicianarray:string[]){
+ makeSandwich(['Turkey', 'Bacon']);
 
-    for(let i=0; i<magicianarray.length; i++){
-
-        magicianarray[i] = 'The Great ' + magicianarray[i]
-    }
-}
-function show_magicians(Magicians: string[]){
-
-    Magicians.forEach(element => {
-        console.log(element);
-    });
-}
-
-const copyMagicianArray = copyArray(magician);
-make_great(copyMagicianArray);
-
-console.log('\n\nThis is my orignal array:');
-show_magicians(magician);
-
-console.log('\n\nThis is my modified copy of the array:');
-show_magicians(copyMagicianArray);
-
-
-
+ makeSandwich(['Peanut butter', 'Jelly']);
